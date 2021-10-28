@@ -10,6 +10,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'hoob3rt/lualine.nvim'
 Plug 'airblade/vim-gitgutter'
+Plug 'windwp/nvim-ts-autotag'
 call plug#end()
 
 let g:coc_global_extensions = [
@@ -91,6 +92,9 @@ require'nvim-treesitter.configs'.setup {
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = false,
   },
+  autotag = {
+    enable = true,
+  }
 }
 
 require('telescope').setup{ 
